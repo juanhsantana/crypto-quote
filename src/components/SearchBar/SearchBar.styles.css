@@ -1,0 +1,28 @@
+.searchBarContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 0 20px;
+}
+
+.searchBarContainer input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    width: 100%;
+    height: 35px;
+    margin-bottom: 40px;
+    border: 2px solid var(--colors-border);
+    border-radius: 10px;
+    padding-left: 15px;
+    outline: none;
+    color: white;
+    background-color: var(--colors-card);
+}
+
+.searchBarContainer input::placeholder {
+    color: rgb(226, 222, 222);
+}

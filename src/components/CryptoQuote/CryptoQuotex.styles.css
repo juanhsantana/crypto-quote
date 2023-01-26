@@ -1,0 +1,59 @@
+.cryptoQuoteContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 0 20px;
+}
+
+.cryptoQuoteContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    width: 100%;
+    gap: 30px;
+}
+
+.coinCard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 350px;
+    height: auto;
+    border: 2px solid var(--colors-border);
+    border-radius: 10px;
+    padding: 8px 10px;
+    gap: 15px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    background-color: var(--colors-card);
+}
+
+.coinCard:hover {
+    opacity: 0.7;
+}
+
+.leftCardContent {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+}
+
+.leftCardContent img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 387px) {
+    .coinCard {
+        min-width: 100%;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
